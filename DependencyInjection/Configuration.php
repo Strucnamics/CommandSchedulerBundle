@@ -17,18 +17,24 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('jmose_command_scheduler');
+        $treeBuilder = new TreeBuilder('jmose_command_scheduler');
+        if (method_exists($treeBuilder, 'getRootNode')) {
+            $rootNode = $treeBuilder->getRootNode();
+        } else {
+            // BC layer for symfony/config 4.1 and older
+            $rootNode = $treeBuilder->root('jmose_command_scheduler');
+        }
+
         $rootNode
             ->children()
                 ->scalarNode('doctrine_manager')->defaultValue('default')->end()
-                ->scalarNode('log_path')->defaultValue('var\logs')->end()
+                ->scalarNode('log_path')->defaultValue('%kernel.logs_dir%')->end()
                 ->scalarNode('lock_timeout')->defaultValue(false)->end()
                 ->arrayNode('monitor_mail')
                     ->defaultValue(array())
                     ->prototype('scalar')->end()
                 ->end()
-                ->scalarNode('monitor_mail_subject')->defaultValue('cronjob monitoring %s, %s')->end()
+                ->scalarNode('monitor_mail_subject')->defaultValue('cronjob monitoring %%s, %%s')->end()
                 ->booleanNode('send_ok')->defaultValue(false)->end()
                 ->variableNode('excluded_command_namespaces')
                     ->defaultValue(array(

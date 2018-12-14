@@ -6,124 +6,124 @@
             <!-- Bundle -->
             <trans-unit id="1">
                 <source>name</source>
-                <target>Symfony's Aufgaben-Planer</target>
+                <target>Symfony's scheduler</target>
             </trans-unit>
 
             <trans-unit id="2">
                 <source>dateFormat</source>
-                <target>d.m.Y H:i</target>
+                <target>Y-m-d H:i</target>
             </trans-unit>
 
             <trans-unit id="3">
                 <source>list.title</source>
-                <target>Geplante Aufgaben</target>
+                <target>Agendar comandos</target>
             </trans-unit>
 
             <!-- Actions -->
             <trans-unit id="100">
                 <source>action.delete</source>
-                <target>Löschen</target>
+                <target>Remover</target>
             </trans-unit>
             <trans-unit id="101">
                 <source>action.execute</source>
-                <target>Ausführen</target>
+                <target>Executar</target>
             </trans-unit>
             <trans-unit id="102">
                 <source>action.edit</source>
-                <target>Bearbeiten</target>
+                <target>Editar</target>
             </trans-unit>
             <trans-unit id="103">
                 <source>action.new</source>
-                <target>Neue Aufgabe</target>
+                <target>Novo agendamento</target>
             </trans-unit>
             <trans-unit id="104">
                 <source>confirm.delete</source>
-                <target>Diese Aufgabe unwiderruflich löschen?</target>
+                <target>Deletar permanentemente esta tarefa ?</target>
             </trans-unit>
             <trans-unit id="105">
                 <source>confirm.execute</source>
-                <target>Die Ausführung dieser Aufgabe erzwingen?</target>
+                <target>Forçar uma execução para esta tarefa ?</target>
             </trans-unit>
             <trans-unit id="106">
                 <source>action.unlock</source>
-                <target>Aufgabe entsperren</target>
+                <target>Desbloquear tarefa</target>
             </trans-unit>
             <trans-unit id="107">
                 <source>confirm.unlock</source>
-                <target>Die Aufgabe könnte gerade ausgeführt werden. Möchtest du sie wirklich entsperren?</target>
+                <target>Esta tarefa pode estar em execução. Tem certeza que deseja desbloqueá-la ?</target>
             </trans-unit>
 
             <!-- Detail  -->
             <trans-unit id="201">
                 <source>detail.title</source>
-                <target>Geplante Aufgabe</target>
+                <target>Agendar comando</target>
             </trans-unit>
 
             <trans-unit id="202">
                 <source>detail.name</source>
-                <target>Name</target>
+                <target>Nome</target>
             </trans-unit>
             <trans-unit id="203">
                 <source>detail.command</source>
-                <target>Kommando</target>
+                <target>Comando</target>
             </trans-unit>
             <trans-unit id="204">
                 <source>detail.arguments</source>
-                <target>Argumente</target>
+                <target>Argumentos</target>
             </trans-unit>
             <trans-unit id="205">
                 <source>detail.cronExpression</source>
-                <target>Cron-Ausdruck</target>
+                <target>Expressão Cron</target>
             </trans-unit>
             <trans-unit id="206">
                 <source>detail.logFile</source>
-                <target>Ausgabedatei</target>
+                <target>Arquivo de saída</target>
             </trans-unit>
             <trans-unit id="207">
                 <source>detail.priority</source>
-                <target>Priorität</target>
+                <target>Prioridade</target>
             </trans-unit>
             <trans-unit id="208">
                 <source>detail.executeImmediately</source>
-                <target>Jetzt ausführen</target>
+                <target>Execute agora</target>
             </trans-unit>
             <trans-unit id="209">
                 <source>detail.disabled</source>
-                <target>Deaktivieren</target>
+                <target>Desabilitar</target>
             </trans-unit>
             <trans-unit id="210">
                 <source>detail.save</source>
-                <target>Speichern</target>
+                <target>Salvar</target>
             </trans-unit>
             <trans-unit id="211">
                 <source>detail.lastExecution</source>
-                <target>Letzte Ausführung</target>
+                <target>Última execução</target>
             </trans-unit>
             <trans-unit id="212">
                 <source>detail.lastReturnCode</source>
-                <target>Letzter Status-Code</target>
+                <target>Último código de saída</target>
             </trans-unit>
             <trans-unit id="213">
                 <source>detail.actions</source>
-                <target>Aktionen</target>
+                <target>Ações</target>
             </trans-unit>
 
             <!-- Flashs messages -->
             <trans-unit id="300">
                 <source>flash.success</source>
-                <target>Aufgabe erfolgreich gespeichert.</target>
+                <target>Agendamento salvo com sucesso.</target>
             </trans-unit>
             <trans-unit id="301">
                 <source>flash.deleted</source>
-                <target>Aufgabe erfolgreich gelöscht.</target>
+                <target>Agendamento deletado com sucesso.</target>
             </trans-unit>
             <trans-unit id="302">
                 <source>flash.execute</source>
-                <target>Aufgabe wird beim nächsten "scheduler:execute" ausgeführt.</target>
+                <target>Comando será executado no próximo "scheduler:execute".</target>
             </trans-unit>
             <trans-unit id="303">
                 <source>flash.unlocked</source>
-                <target>Aufgabe erfolgreich entsperrt.</target>
+                <target>Agendamento desbloqueado com sucesso.</target>
             </trans-unit>
 
         </body>
